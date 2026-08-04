@@ -1,6 +1,9 @@
 import styles from './Heading.module.css';
 
-export function Heading() {
-  console.log(styles);
-  return <h1 className={styles}>Olá mundo!</h1>;
+type HeadingProps = {
+  children: string;
+};
+
+export function Heading({ children }: HeadingProps) {
+  return <h1 className={styles.heading}>{children}</h1>;
 }
