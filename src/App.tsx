@@ -1,18 +1,35 @@
-import { Heading } from './components/Heading';
-
 import './styles/theme.css';
 import './styles/global.css';
+import { Logo } from './components/Logo.tsx';
 
 export function App() {
   return (
     <>
-      <Heading>Olá mundo 1</Heading>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe maxime
-        totam numquam repellat omnis vero, alias facilis recusandae libero,
-        temporibus aliquam, beatae velit deleniti nesciunt dolore consequuntur
-        accusantium nobis quia.
-      </p>
+      <div className='container'>
+        <div className='content'>
+          <section>
+            <Logo>Chronos</Logo>
+          </section>
+        </div>
+      </div>
+
+      <div className='container'>
+        <div className='content'>
+          <section>MENU</section>
+        </div>
+      </div>
+
+      <div className='container'>
+        <div className='content'>
+          <section>FORM</section>
+        </div>
+      </div>
+
+      <div className='container'>
+        <div className='content'>
+          <section>FOOTER</section>
+        </div>
+      </div>
     </>
   );
 }
